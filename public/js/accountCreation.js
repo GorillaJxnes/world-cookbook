@@ -1,10 +1,10 @@
 const accountCreation = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    // Gather the data from the form elements on the page
-    const name = document.querySelector('#user-name').value.trim();
-    const email = document.querySelector('#user-email').value.trim();
-    const password = document.querySelector('#user-password').value.trim();
+  // Gather the data from the form elements on the page
+  const name = document.querySelector("#user-name").value.trim();
+  const email = document.querySelector("#user-email").value.trim();
+  const password = document.querySelector("#user-password").value.trim();
 
     if (name && email && password) {
         const response = await fetch('/api/users/newuser', {
@@ -18,7 +18,8 @@ const accountCreation = async (event) => {
             alert('YOO Bros Your Account Creation has failed')
         }
     }
-};
+  }
+
 
 
 document.addEventListener('submit', accountCreation)
