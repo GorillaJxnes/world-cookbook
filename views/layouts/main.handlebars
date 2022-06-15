@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>World Best Cook Book</title>
 </head>
 <body>
-    <header><a href="/login">login</a></header>
+    <header><a href="/login">login</a>
+
+    <!-- Only display the logout button if the user is logged in -->
+    {{#if logged_in}}
+    <nav>
+      <button class="btn" id="logout">logout</button>
+    </nav>
+    {{/if}}
+    </header>
 <main>
     {{{body}}}
 </main>
+
+  <!-- Only include the logout script if the user is logged in -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 </html>
