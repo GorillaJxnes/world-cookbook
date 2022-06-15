@@ -10,7 +10,7 @@ Recipe.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-Recipe.hasMany(Comment, {
+User.hasMany(Comment, {
     foreignKey: 'user_id'
 });
 
