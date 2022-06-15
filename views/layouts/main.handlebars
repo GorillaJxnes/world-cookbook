@@ -8,9 +8,22 @@
     <title>World Best Cook Book</title>
 </head>
 <body>
-    <header><a href="/login">login</a></header>
+    <header><a href="/login">login</a>
+
+    <!-- Only display the logout button if the user is logged in -->
+    {{#if logged_in}}
+    <nav>
+      <button class="btn" id="logout">logout</button>
+    </nav>
+    {{/if}}
+    </header>
 <main>
     {{{body}}}
 </main>
+
+  <!-- Only include the logout script if the user is logged in -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 </html>
