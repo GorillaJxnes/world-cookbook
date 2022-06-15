@@ -8,8 +8,8 @@ const accountCreation = async (event) => {
 
     if (name && email && password) {
         const response = await fetch('/api/users/newuser', {
-            method: 'Post',
-            body: JSON.stringify({ name,email, password }),
+            method: 'POST',
+            body: JSON.stringify({ name, email, password }),
             headers: { 'Content-Type': 'application/json' },
         });
         if (response.ok) {
@@ -21,4 +21,4 @@ const accountCreation = async (event) => {
 };
 
 
-document.addEventListener('submit', newAccount)
+document.addEventListener('submit', accountCreation)
