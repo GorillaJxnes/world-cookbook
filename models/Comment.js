@@ -13,25 +13,15 @@ Comment.init(
       },
       user_id: {
         type: DataTypes.INTEGER,
-        references: {
-          model: 'user',
-          key: 'id',
-        },
       },
       content: {
       type: DataTypes.STRING,
       allowNull: false,
       },
-      recipe_id: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        references: {
-          model: 'recipe',
-          key: 'id',
-        },
-       },
+      },
 
-      sequelize,
+      {
+        sequelize,
       timestamps: false,
       freezeTableName: true,
       underscored: true,
