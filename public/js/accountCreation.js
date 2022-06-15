@@ -15,11 +15,10 @@ const accountCreation = async (event) => {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            alert('YOO Bros Your Account Creation has failed')
+            alert('Account Creation has failed')
         }
     }
-  }
-
+};
 
 
 document.addEventListener('submit', accountCreation)
