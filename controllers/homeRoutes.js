@@ -35,6 +35,7 @@ router.get("/", async (req, res) => {
           },
           {
             model: Comment,
+
             attributes: ['user_id', 'content'],
           }
         ],
@@ -50,8 +51,6 @@ router.get("/", async (req, res) => {
   });
 
 
-
-
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
@@ -63,5 +62,12 @@ router.get("/login", (req, res) => {
 router.get("/post", (req, res) => {
   res.render("post");
 });
+
+
+
+
+
+
+
 
 module.exports = router;
