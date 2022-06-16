@@ -27,7 +27,7 @@ body {
     position: absolute;
     width: 1600px;
     height: 950px;
-    /* margin-left: 30px; */
+    
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 10px 100px 20px rgba(132, 132, 132, 0.2);
@@ -68,10 +68,9 @@ h3,
     border-radius: 30px;
     background: #ABCBE0;
     border-radius: 54px;
-    /* border: 1px solid #ABCBE0; */
+
     box-shadow: 10px 10px 24px 0px #ABCBE0;
     margin-top: 300px;
-    /* margin-left: 210px; */
     display: flex;
     align-self: flex-start;
     margin-left: 3.5%;
@@ -80,10 +79,9 @@ h3,
 
 .card-info{
     font-family: 'Katibeh', cursive;
-    margin-left: 15%;
-    margin-top: 25%;
+    margin-left: 25%;
+    margin-top: 30%;
     font-size: 40px;
-
 }
 
 a:link,
@@ -93,8 +91,6 @@ a:visited{
 }
 
 a:hover{
-    /* background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%); */
-	/* background-color: white; */
     text-decoration: underline;
     color: #FFFFFF80;
 }
@@ -102,4 +98,13 @@ a:hover{
 a:active{
     position:relative;
 	top:1px;
+}
+
+
+#BreakFast,
+#Lunch,
+#Dinner,
+#Recipe,
+#signup {
+    margin-top: 20%;
 }
