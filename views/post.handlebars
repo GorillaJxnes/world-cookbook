@@ -1,13 +1,22 @@
 <div>
     <form>
-        <label for="post-title">Title</label>
+        <label for="post-title">Name of Dish</label>
         <input type="text" name="post-title" id="post-title">
         <br>
-        <textarea name="post-title" id="postContent" cols="50" rows="25"></textarea>
+        <h3>Please add Ingredients here</h3> 
+        <textarea name="post-content" id="post-ingredients" cols="50" rows="10"></textarea>
+        <br>
+        <h3>Please add instructions here</h3>
+        <textarea name="post-content" id="post-steps" cols="50" rows="25"></textarea>
+        <br>
+        <label for="meal">Which meal is this for?:</label>
+        <select id="meal" name="meal">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+        </select>
         <br>
         <input type="submit" id="postFormSubmit" name="formSubmit" value="Submit">
         <br>
     </form>
 </div> 
-
-<script src="/js/post.js"></script>
