@@ -24,6 +24,7 @@ router.get("/", async (req, res) => {
     }
   });
 
+
   router.get('/post/:id', async (req, res) => {
     try {
       const recipeData = await Recipe.id(req.params.id, {
@@ -34,7 +35,8 @@ router.get("/", async (req, res) => {
           },
           {
             model: Comment,
-            attributes: ['user_id', 'content']
+
+            attributes: ['user_id', 'content'],
           }
         ],
       });
@@ -47,6 +49,7 @@ router.get("/", async (req, res) => {
       res.status(500).json(err);
     }
   });
+
 
 router.get("/signup", (req, res) => {
   res.render("signup");
