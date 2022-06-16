@@ -30,7 +30,7 @@ router.get('/post/:name', async (req, res) => {
 
     const post = postData.get({ plain: true });
 
-    res.render('post','ingredients', 'steps', 'meal' {
+    res.render('post','ingredients', 'steps', 'meal',{
       ...post,
       logged_in: req.session.logged_in
     });
@@ -38,6 +38,9 @@ router.get('/post/:name', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+
 
 
 module.exports = router;
