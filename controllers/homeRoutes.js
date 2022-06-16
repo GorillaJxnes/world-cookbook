@@ -1,10 +1,30 @@
 const router = require("express").Router();
-const { User, Post } = require("../models");
+const { User, Recipe } = require("../models");
 const withAuth = require("../utils/auth");
 
-router.get("/", (req, res) => {
-  res.render("homepage");
-});
+router.get("/", async (req, res) => {
+    try {
+      const recipeData = await Recipe.findAll({
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+  
+      const recipes = recipeData.map((recipes) => recipes.get({ plain: true }));
+  
+      res.render("homepage", {
+        recipes,
+        logged_in: req.session.logged_in
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
 
 router.get("/signup", (req, res) => {
   res.render("signup");
