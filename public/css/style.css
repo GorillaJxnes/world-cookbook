@@ -80,10 +80,9 @@ h3,
 
 .card-info{
     font-family: 'Katibeh', cursive;
-    margin-left: 15%;
-    margin-top: 25%;
+    margin-left: 25%;
+    margin-top: 30%;
     font-size: 40px;
-
 }
 
 a:link,
@@ -102,4 +101,13 @@ a:hover{
 a:active{
     position:relative;
 	top:1px;
+}
+
+
+#BreakFast,
+#Lunch,
+#Dinner,
+#Recipe,
+#signup {
+    margin-top: 20%;
 }
