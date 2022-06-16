@@ -24,7 +24,29 @@ router.get("/", async (req, res) => {
     }
   });
 
-
+  router.get('/post/:id', async (req, res) => {
+    try {
+      const recipeData = await Recipe.id(req.params.id, {
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+          {
+            model: Comment,
+            attributes: ['user_id', 'content']
+          }
+        ],
+      });
+      const recipe = recipeData.get({ plain: true });
+      res.render('singlePost', {
+        recipe,
+        logged_in: req.session.logged_in
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 router.get("/signup", (req, res) => {
   res.render("signup");
@@ -37,5 +59,12 @@ router.get("/login", (req, res) => {
 router.get("/post", (req, res) => {
   res.render("post");
 });
+
+
+
+
+
+
+
 
 module.exports = router;
