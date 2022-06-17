@@ -35,9 +35,8 @@ router.get("/", async (req, res) => {
           },
           {
             model: Comment,
-
             attributes: ['user_id', 'content'],
-          }
+          },
         ],
       });
       const recipe = recipeData.get({ plain: true });
@@ -49,6 +48,18 @@ router.get("/", async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 router.get("/signup", (req, res) => {
