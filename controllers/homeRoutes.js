@@ -35,9 +35,8 @@ router.get("/", async (req, res) => {
           },
           {
             model: Comment,
-
             attributes: ['user_id', 'content'],
-          }
+          },
         ],
       });
       const recipe = recipeData.get({ plain: true });
