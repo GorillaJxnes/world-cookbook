@@ -1,4 +1,4 @@
-<div>
+{{!-- <div>
     <form>
         <label for="user-name">Username:</label>
         <input type="text" id="user-name" />
@@ -7,8 +7,28 @@
         <label for="user-password">Password:</label>
         <input type="password" id="user-password" />
         <input type="submit" id="postFormSubmit" name="formSubmit" value="Submit">
-
+        <p class="message">Already registered? <a href="/login">Login</a></p>
     </form>
+</div> --}}
+
+{{!-- #################################################### --}}
+
+<div class="signup-page">
+      <div class="form">
+        <div class="signup">
+          <div class="signup-header">
+            <h3>SIGNUP</h3>
+            <p>Please enter your credentials to signup.</p>
+          </div>
+        </div>
+        <form class="signup-form">
+          <input type="text" placeholder="username" id="user-name"/>
+          <input type="text" placeholder="email" id="user-email" />
+          <input type="password" placeholder="password" id="user-password"/>
+          <button>SignUp</button>
+          <p class="message">Already registered? <a href="/login">Login</a></p>
+        </form>
+      </div>
 </div>
 
 <script src="/js/accountCreation.js"></script>
