@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Montserrat", sans-serif; */
+    /* font-family: 'Katibeh', cursive; */
+}
+
+/* Html & Body Section */
+html {
+    height:100%;
+    scroll-behavior: smooth;  
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    background: #BBDAC7;
+}
+
+.card-bg {
+    position: absolute;
+    width: 1600px;
+    height: 950px;
+    
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 100px 20px rgba(132, 132, 132, 0.2);
+    border-radius: 54px;
+    background: #FFFFFF80;
+}
+
+.main-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    position: absolute;
+    width: 1500px;
+    height: 250px;
+    background: #BBDAC7;
+    margin-top: 25px;
+    border-radius: 54px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-title,
+h3,
+.h1{
+    font-family: 'Jacques Francois Shadow';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.card-left{
+    height: 630px;
+    width: 250px;
+    border-radius: 30px;
+    background: #ABCBE0;
+    border-radius: 54px;
+
+    box-shadow: 10px 10px 24px 0px #ABCBE0;
+    margin-top: 300px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 3.5%;
+}
+
+
+.card-info{
+    font-family: 'Katibeh', cursive;
+    margin-left: 25%;
+    margin-top: 30%;
+    font-size: 40px;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #FFFFFF80;
+}
+
+a:active{
+    position:relative;
+	top:1px;
+}
+
+
+#BreakFast,
+#Lunch,
+#Dinner,
+#Recipe,
+#signup {
+    margin-top: 20%;
+}
