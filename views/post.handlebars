@@ -1,15 +1,12 @@
-<div>
-    <form>
+<div id="postDiv">
+    <form id="myForm">
         <label for="post-title">Name of Dish</label>
         <input type="text" name="post-title" id="post-title">
         <br>
         <h3>Please add Ingredients here</h3> 
-        <ul id="list"><button id="addIngredientBtn">Add</button>
+        <ul id="list"><button id="addIngredientBtn">Add Ingredient</button>
             <li class="listItem"><input type="text" class="ingredient" name="ingredientName"/></li>
         </ul>
-        <br>
-        <h3>Please add instructions here</h3>
-        <textarea name="post-content" id="post-steps" cols="50" rows="25"></textarea>
         <br>
         <label for="meal">Which meal is this for?:</label>
         <select id="meal" name="meal">
@@ -18,7 +15,7 @@
             <option value="dinner">Dinner</option>
         </select>
         <br>
-        <input type="submit" id="postFormSubmit" name="formSubmit" value="Submit">
+        <button id="nextStepBtn">Next Step</button>
         <br>
     </form>
 </div> 
