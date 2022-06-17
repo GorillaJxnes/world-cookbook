@@ -11,25 +11,34 @@
     <header>
 
     <!-- Only display the logout button if the user is logged in -->
-    {{#if logged_in}}
-    <nav>
-      <button class="btn" id="logout">Logout</button>
-    </nav>
-    {{/if}}
+    {{!-- {{#if logged_in}}
+        <nav>
+          
+        </nav>
+    {{/if}} --}}
+
     </header>
 <main class="main-bg">
     
     <div class="card-bg">
       <div class="card-left">
-        <ul class="card-info">
-          <p><a href="/login">Login</a></p>
+        <ul class="card-info">     
           <p id="signup"><a href="/signup">SignUp</a></p>
           <p id="BreakFast">BreakFast</p>
           <p id="Lunch">Lunch</p>
           <p id="Dinner">Dinner</p>
           <p id="Recipe">Add recipe</p>
         </ul>
-      </div>
+
+<section id="navigation-account">
+        {{#if logged_in}}
+        <button class="btn" id="logout">Logout</button>
+        {{else}}
+        <p id="Login"><a href="/login">Login</a></p>
+        {{/if}}
+</section>
+
+    </div>
       {{{body}}}
     </div>
 
@@ -37,17 +46,13 @@
       <h1>WORLD BEST COOK BOOK 🥗</h1>
       <H3>LIKE NERVER BEFORE</H3>
     </div>
-
   
 </main>
 
-
-
-
-
-  <!-- Only include the logout script if the user is logged in -->
+<!-- Only include the logout script if the user is logged in -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 </html>
+
