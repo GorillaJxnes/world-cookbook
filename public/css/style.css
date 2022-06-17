@@ -182,20 +182,7 @@ a:active{
   
 
 /* LogOut btn  */
-#logout{
-	background-color:#ABCBE0;
-	border:1px solid #ABCBE0;
-	display:inline-block;
-	cursor:pointer;
-	font-family: 'Katibeh', cursive;
-	padding:6px 24px;
-	text-decoration:none;
-    margin: 40%;
-    margin-left: -150%;
-    font-size: 40px;
-    margin-top: 20%;
 
-}
 
 #logout:hover{
     text-decoration: underline;
@@ -225,7 +212,9 @@ a:active{
 #breakFast,
 #lunch,
 #dinner,
-#recipe {
+#recipe,
+#login,
+#logout {
     background-color:#ABCBE0;
 	border:1px solid #ABCBE0;
 	display:inline-block;
@@ -234,7 +223,7 @@ a:active{
 	text-decoration:none;
     /* margin: 40%; */
     font-size: 40px;
-    margin-top: 20%;
+    margin-top: 20px;
 }
 
 #recipe:hover{
@@ -245,4 +234,8 @@ a:active{
 #recipe:active{
     position:relative;
 	top:1px;
+}
+
+#navigation-account {
+    list-style: none;
 }
