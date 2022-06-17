@@ -17,22 +17,29 @@
     <div class="card-bg">
       <div class="card-left">
 
-        <ul class="card-info">
+        <ul id="navigation-account" class="card-info">
           {{!-- <button class="btn" id="login"> <a href="/login">Login</a></button> --}}
-          <button class="btn" id="signup"> <a href="/signup">SignUp</a></button>
-          <button class="btn" id="breakFast"> <a href=""></a>BreakFast</button>
-          <button class="btn" id="lunch"> <a href=""></a>Lunch</button>
-          <button class="btn" id="dinner"> <a href=""></a>Dinner</button>
-          <button class="btn" id="recipe"> <a href="/post"></a>Add recipe</button>
+        {{#if logged_in}}
+        <li><button class="btn" id="logout">Logout</button></li>
+        {{else}}
+        <li><button class="btn" id="login"><a href="/login">Login</a></button></li>
+        <li><button class="btn" id="signup"> <a href="/signup">SignUp</a></button></li>
+        {{/if}}
+        <li><button class="btn" id="breakFast"> <a href="/">Home</a></button></li>
+        <li><button class="btn" id="breakFast"> <a href="">BreakFast</a></button></li>
+        <li><button class="btn" id="lunch"> <a href="">Lunch</a></button></li>
+        <li><button class="btn" id="dinner"> <a href="">Dinner</a></button></li>
+        <li><button class="btn" id="recipe"> <a href="/post">Add recipe</a></button></li>
         </ul>
 
-<section id="navigation-account">
+{{!-- <section id="navigation-account">
         {{#if logged_in}}
         <button class="btn" id="logout">Logout</button>
         {{else}}
-        <p id="Login"><a href="/login">Login</a></p>
+        <button class="btn" id="Login"><a href="/login">Login</a></button>
+        <button class="btn" id="signup"> <a href="/signup">SignUp</a></button>
         {{/if}}
-</section>
+</section> --}}
 
     </div>
       {{{body}}}
