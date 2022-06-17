@@ -24,7 +24,7 @@ Recipe.init(
       allowNull: false,
     },
     meal: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },

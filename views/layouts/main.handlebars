@@ -11,25 +11,37 @@
     <header>
 
     <!-- Only display the logout button if the user is logged in -->
-    {{#if logged_in}}
-    <nav>
-      <button class="btn" id="logout">Logout</button>
-    </nav>
-    {{/if}}
     </header>
 <main class="main-bg">
     
     <div class="card-bg">
       <div class="card-left">
-        <ul class="card-info">
-          <p><a href="/login">Login</a></p>
-          <p id="signup"><a href="/signup">SignUp</a></p>
-          <p id="BreakFast">BreakFast</p>
-          <p id="Lunch">Lunch</p>
-          <p id="Dinner">Dinner</p>
-          <p id="Recipe">Add recipe</p>
+
+        <ul id="navigation-account" class="card-info">
+          {{!-- <button class="btn" id="login"> <a href="/login">Login</a></button> --}}
+        {{#if logged_in}}
+        <li><button class="btn" id="logout">Logout</button></li>
+        {{else}}
+        <li><button class="btn" id="login"><a href="/login">Login</a></button></li>
+        <li><button class="btn" id="signup"> <a href="/signup">SignUp</a></button></li>
+        {{/if}}
+        <li><button class="btn" id="breakFast"> <a href="/">Home</a></button></li>
+        <li><button class="btn" id="breakFast"> <a href="">BreakFast</a></button></li>
+        <li><button class="btn" id="lunch"> <a href="">Lunch</a></button></li>
+        <li><button class="btn" id="dinner"> <a href="">Dinner</a></button></li>
+        <li><button class="btn" id="recipe"> <a href="/post">Add recipe</a></button></li>
         </ul>
-      </div>
+
+{{!-- <section id="navigation-account">
+        {{#if logged_in}}
+        <button class="btn" id="logout">Logout</button>
+        {{else}}
+        <button class="btn" id="Login"><a href="/login">Login</a></button>
+        <button class="btn" id="signup"> <a href="/signup">SignUp</a></button>
+        {{/if}}
+</section> --}}
+
+    </div>
       {{{body}}}
     </div>
 
@@ -38,16 +50,12 @@
       <H3>LIKE NERVER BEFORE</H3>
     </div>
 
-  
 </main>
 
-
-
-
-
-  <!-- Only include the logout script if the user is logged in -->
+<!-- Only include the logout script if the user is logged in -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 </html>
+

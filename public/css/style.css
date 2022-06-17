@@ -20,13 +20,14 @@ html {
 body {
     width: 100%;
     background: #BBDAC7;
+    overflow: hidden;
 }
 
 .card-bg {
     position: absolute;
+
     width: 90%;
     height: 97%;
-    
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 10px 100px 20px rgba(132, 132, 132, 0.2);
@@ -108,25 +109,23 @@ a:active{
     margin-top: 20%;
 }
 
-/* ######################################################################### */
 /* Login & SignUP Section */
 
-/* .signup-page,
-.login-page {
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-
-} */
-
-/* .login-page .signup-page .form .login .signup{
-    margin-top: -31px;
-    margin-bottom: 26px;
-} */
+.signup-page,
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100%;
+    height: 10%;
+    width: 50%;
+    margin: -250px;
+    margin-left: 25%;
+}
 
 .form {
     position: relative;
-    /* z-index: 1; */
+    z-index: 1;
     background: #FFFFFF;
     max-width: 360px;
     margin: 0 auto 100px;
@@ -181,42 +180,62 @@ a:active{
     margin: 0 auto;
 }
   
-.signup-page,
-.login-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100%;
-    height: 630px;
-    width: 360px;
-
-    margin-left: 25%;
-}
 
 /* LogOut btn  */
-#logout{
-    box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-	background-color:#ededed;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#777777;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}
+
 
 #logout:hover{
-    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-	background-color:#dfdfdf;
+    text-decoration: underline;
+    color: #FFFFFF80;
 }
 
 #logout:active{
     position:relative;
 	top:1px;
+}
+
+#Login{
+	background-color:#ABCBE0;
+	border:1px solid #ABCBE0;
+	display:inline-block;
+	cursor:pointer;
+	font-family: 'Katibeh', cursive;
+	padding:6px 24px;
+	text-decoration:none;
+    margin: 40%;
+    margin-left: -175%;
+    font-size: 40px;
+    margin-top: 20%;
+}
+
+#signup,
+#breakFast,
+#lunch,
+#dinner,
+#recipe,
+#login,
+#logout {
+    background-color:#ABCBE0;
+	border:1px solid #ABCBE0;
+	display:inline-block;
+	cursor:pointer;
+	font-family: 'Katibeh', cursive;
+	text-decoration:none;
+    /* margin: 40%; */
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#recipe:hover{
+    text-decoration: underline;
+    color: #FFFFFF80;
+}
+
+#recipe:active{
+    position:relative;
+	top:1px;
+}
+
+#navigation-account {
+    list-style: none;
 }

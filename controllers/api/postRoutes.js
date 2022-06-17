@@ -2,14 +2,20 @@ const router = require("express").Router();
 const {Recipe, User, Comment } = require("../../models");
 
 router.post("/newpost", async (req, res) => {
-  try {
-    const postData = await Post.create({
-      blog_title: req.body.blog_title,
-      blog_content: req.body.blog_content,
+
+ console.log(req.body)
+ console.log(req.session.user_id)
+ try {
+    const recipeData = await Recipe.create({
+      name: req.body.name,
+      ingredients: req.body.ingredients,
+      steps: req.body.steps,
+      meal: req.body.meal,
       user_id: req.session.user_id,
+
     });
-    res.status(200).json(postData);
-    console.log(postData);
+    res.status(200).json(recipeData);
+    console.log(recipeData);
   } catch (err) {
     res.status(400).json(err);
   }
