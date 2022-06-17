@@ -8,7 +8,7 @@
     <title>World Best Cook Book</title>
 </head>
 <body>
-    <header><a href="/login">login</a>
+    <header>
 
     <!-- Only display the logout button if the user is logged in -->
     {{#if logged_in}}
@@ -17,9 +17,33 @@
     </nav>
     {{/if}}
     </header>
-<main>
-    {{{body}}}
+<main class="main-bg">
+    
+    <div class="card-bg">
+      <div class="card-left">
+        <ul class="card-info">
+          <p><a href="/login">Login</a></p>
+          <p id="signup"><a href="/signup">SignUp</a></p>
+          <p id="BreakFast">BreakFast</p>
+          <p id="Lunch">Lunch</p>
+          <p id="Dinner">Dinner</p>
+          <p id="Recipe">Add recipe</p>
+        </ul>
+      </div>
+      {{{body}}}
+    </div>
+
+    <div class="card-title">
+      <h1>WORLD BEST COOK BOOK 🥗</h1>
+      <H3>LIKE NERVER BEFORE</H3>
+    </div>
+
+  
 </main>
+
+
+
+
 
   <!-- Only include the logout script if the user is logged in -->
   {{#if logged_in}}
