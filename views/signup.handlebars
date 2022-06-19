@@ -1,18 +1,3 @@
-{{!-- <div>
-    <form>
-        <label for="user-name">Username:</label>
-        <input type="text" id="user-name" />
-        <label for="user-name">Email:</label>
-        <input type="text" id="user-email" />
-        <label for="user-password">Password:</label>
-        <input type="password" id="user-password" />
-        <input type="submit" id="postFormSubmit" name="formSubmit" value="Submit">
-        <p class="message">Already registered? <a href="/login">Login</a></p>
-    </form>
-</div> --}}
-
-{{!-- #################################################### --}}
-
 <div class="signup-page">
       <div class="form">
         <div class="signup">
@@ -22,9 +7,9 @@
           </div>
         </div>
         <form class="signup-form">
-          <input type="text" placeholder="username" id="user-name"/>
-          <input type="text" placeholder="email" id="user-email" />
-          <input type="password" placeholder="password" id="user-password"/>
+          <input type="text" placeholder="username" id="user-name" required/>
+          <input type="text" placeholder="email" id="user-email" required/>
+          <input type="password" placeholder="password" id="user-password" required/>
           <button>SignUp</button>
           <p class="message">Already registered? <a href="/login">Login</a></p>
         </form>

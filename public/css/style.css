@@ -7,8 +7,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: "Montserrat", sans-serif; */
-    /* font-family: 'Katibeh', cursive; */
 }
 
 /* Html & Body Section */
@@ -20,12 +18,11 @@ html {
 body {
     width: 100%;
     background: #BBDAC7;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .card-bg {
     position: absolute;
-
     width: 90%;
     height: 97%;
     text-align: center;
@@ -63,19 +60,17 @@ h3,
 }
 
 .card-left{
-    height: 630px;
-    width: 250px;
+    height: 65%;
+    width: 15%;
     border-radius: 30px;
     background: #ABCBE0;
     border-radius: 54px;
-
     box-shadow: 10px 10px 24px 0px #ABCBE0;
     margin-top: 300px;
     display: flex;
     align-self: flex-start;
     margin-left: 3.5%;
 }
-
 
 .card-info{
     font-family: 'Katibeh', cursive;
@@ -101,15 +96,7 @@ a:active{
 }
 
 
-#BreakFast,
-#Lunch,
-#Dinner,
-#Recipe,
-#signup {
-    margin-top: 20%;
-}
-
-/* Login & SignUP Section */
+/* Login & SignUP  Section */
 
 .signup-page,
 .login-page{
@@ -239,3 +226,229 @@ a:active{
 #navigation-account {
     list-style: none;
 }
+
+
+/* Add Recipe style */
+
+#postDiv{
+    position: relative;
+    font-family: 'Katibeh', cursive;
+    z-index: 1;
+    background: linear-gradient(45deg,#328f8a,#08ac4b);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 30px;
+    margin: -600px;
+    margin-left: 39%;
+    list-style: none;
+}
+
+#myForm{
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+
+.swing {
+    padding: 10px 0 10px 15px;
+    color: black;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    text-indent: 60px;
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow:
+  1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+  2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+  5px 0px 23.8px rgba(0, 0, 0, 0.115),
+  8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+  16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+  40px 0px 190px rgba(0, 0, 0, 0.23); 
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    position: static;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow:
+  3.5px 0px 11.8px rgba(0, 0, 0, 0.166),
+  6.8px 0px 24.6px rgba(0, 0, 0, 0.205),
+  10.2px 0px 39.7px rgba(0, 0, 0, 0.222),
+  14.1px 0px 60px rgba(0, 0, 0, 0.228),
+  20.3px 0px 94.6px rgba(0, 0, 0, 0.23),
+  40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
+	background-color: #ABCBE0;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#list,
+#stepList,
+.addIgt,
+.listItem{
+    list-style: none;
+    font-size: 20px;
+}
+
+.ingredient {
+    padding: 10px 0 10px 15px;
+    border: 0;
+    outline: 0;
+    text-indent: 60px;
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow:
+  1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+  2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+  5px 0px 23.8px rgba(0, 0, 0, 0.115),
+  8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+  16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+  40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+.select {
+    padding: 10px 0 10px 15px;
+    border: 0;
+    outline: 0;
+    text-indent: 60px;
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow:
+  1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+  2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+  5px 0px 23.8px rgba(0, 0, 0, 0.115),
+  8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+  16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+  40px 0px 190px rgba(0, 0, 0, 0.23); 
+}
+
+#nextStepBtn {
+    position: static;
+    text-align: center;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-top: 15px;
+    box-shadow:
+    1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+    2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+    5px 0px 23.8px rgba(0, 0, 0, 0.115),
+    8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+    16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+    40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+#nextStepBtn:hover {
+	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
+	background-color: #ABCBE0;
+}
+
+#nextStepBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#addStepBtn{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    position: static;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow:
+  3.5px 0px 11.8px rgba(0, 0, 0, 0.166),
+  6.8px 0px 24.6px rgba(0, 0, 0, 0.205),
+  10.2px 0px 39.7px rgba(0, 0, 0, 0.222),
+  14.1px 0px 60px rgba(0, 0, 0, 0.228),
+  20.3px 0px 94.6px rgba(0, 0, 0, 0.23),
+  40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+#addStepBtn:hover {
+	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
+	background-color: #ABCBE0;
+}
+
+#addStepBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#stepList {
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+/* footer{
+    text-align: right;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+} */
