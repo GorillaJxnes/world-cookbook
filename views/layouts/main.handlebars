@@ -9,14 +9,6 @@
 </head>
 <body>
     <header>
-
-    <!-- Only display the logout button if the user is logged in -->
-    </header>
-<main class="main-bg">
-    
-    <div class="card-bg">
-      <div class="card-left">
-
         <ul id="navigation-account" class="card-info">
           {{!-- <button class="btn" id="login"> <a href="/login">Login</a></button> --}}
           <li><button class="btn" id="breakFast"> <a href="/">Home</a></button></li>
@@ -32,6 +24,17 @@
         <li><button class="btn" id="dinner"> <a href="/api/posts/dinner">Dinner</a></button></li>
         <li><button class="btn" id="recipe"> <a href="/post">Add recipe</a></button></li>
         </ul>
+    <!-- Only display the logout button if the user is logged in -->
+    </header>
+<main>
+
+
+    
+    
+    {{!-- <div class="card-bg">
+      <div class="card-left"> --}}
+
+
 
 {{!-- <section id="navigation-account">
         {{#if logged_in}}
@@ -42,14 +45,9 @@
         {{/if}}
 </section> --}}
 
-    </div>
-      {{{body}}}
-    </div>
 
-    <div class="card-title">
-      <h1>WORLD BEST COOK BOOK 🥗</h1>
-      <H3>LIKE NERVER BEFORE</H3>
-    </div>
+      {{{body}}}
+
 
 </main>
 

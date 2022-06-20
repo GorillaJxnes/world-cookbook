@@ -17,8 +17,26 @@ html {
 
 body {
     width: 100%;
-    background: #BBDAC7;
+    margin: 0;
+    padding: 0;
     /* overflow: hidden; */
+}
+header {
+    align-items: center;
+    background-color: #d0bcac;
+    height: 4.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: row;
+}
+
+button {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-bg {
@@ -39,10 +57,11 @@ body {
 }
 
 .card-title {
+    opacity: 0.9;
     position: absolute;
     width: 85%;
-    height: 25%;
-    background: #BBDAC7;
+    height: 25% max-content 30%;
+    background: #5e432f;
     margin-top: 1%;
     border-radius: 54px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -74,9 +93,13 @@ h3,
 
 .card-info{
     font-family: 'Katibeh', cursive;
-    margin-left: 25%;
-    margin-top: 30%;
+    margin: 0px auto;
     font-size: 40px;
+    width: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 a:link,
@@ -103,11 +126,9 @@ a:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100%;
-    height: 10%;
-    width: 50%;
-    margin: -250px;
-    margin-left: 25%;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
 }
 
 .form {
@@ -141,7 +162,6 @@ a:active{
     background-image: linear-gradient(45deg,#328f8a,#08ac4b);
     width: 100%;
     border: 0;
-    padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
@@ -202,15 +222,12 @@ a:active{
 #recipe,
 #login,
 #logout {
-    background-color:#ABCBE0;
-	border:1px solid #ABCBE0;
+    opacity: 0.5;
 	display:inline-block;
 	cursor:pointer;
 	font-family: 'Katibeh', cursive;
 	text-decoration:none;
-    /* margin: 40%; */
-    font-size: 40px;
-    margin-top: 20px;
+    font-size: 30px;
 }
 
 #recipe:hover{
@@ -224,7 +241,17 @@ a:active{
 }
 
 #navigation-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     list-style: none;
+}
+#navigation-account > li{
+    
+    display: inline-block;
+    
 }
 
 
@@ -255,6 +282,8 @@ a:active{
     box-sizing: border-box;
     font-size: 25px;
 }
+
+
 
 
 .swing {
@@ -387,10 +416,10 @@ a:active{
     40px 0px 190px rgba(0, 0, 0, 0.23);
 }
 
-#nextStepBtn:hover {
+/* #nextStepBtn:hover {
 	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
 	background-color: #ABCBE0;
-}
+} */
 
 #nextStepBtn:active {
 	position:relative;
@@ -452,3 +481,62 @@ a:active{
     width: 100%;
     height: 2.5rem;
 } */
+
+
+
+/* Kyles image CSS tests. */
+#cat,
+#dog {
+    color: white;
+    text-shadow: #392113 1px 1px 1px 1px;
+}
+
+
+#mainImg {
+    background-image: url(../foodimages/mainneutral.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+} 
+#breakfastImg {
+    background-image: url(../foodimages/breakfastOne.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#lunchImg {
+    background-image: url(../foodimages/lunchOne.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#dinnerImg {
+    background-image: url(../foodimages/dinnerOne.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+} 
