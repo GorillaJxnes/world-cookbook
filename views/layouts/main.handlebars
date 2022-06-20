@@ -19,14 +19,15 @@
 
         <ul id="navigation-account" class="card-info">
           {{!-- <button class="btn" id="login"> <a href="/login">Login</a></button> --}}
+          <li><button class="btn" id="breakFast"> <a href="/">Home</a></button></li>
         {{#if logged_in}}
         <li><button class="btn" id="logout">Logout</button></li>
         {{else}}
         <li><button class="btn" id="login"><a href="/login">Login</a></button></li>
         <li><button class="btn" id="signup"> <a href="/signup">SignUp</a></button></li>
         {{/if}}
-        <li><button class="btn" id="breakFast"> <a href="/">Home</a></button></li>
-        <li><button class="btn" id="breakFast"> <a href="/breakfast">BreakFast</a></button></li>
+        
+        <li><button class="btn" id="breakFast"> <a href="">BreakFast</a></button></li>
         <li><button class="btn" id="lunch"> <a href="">Lunch</a></button></li>
         <li><button class="btn" id="dinner"> <a href="">Dinner</a></button></li>
         <li><button class="btn" id="recipe"> <a href="/post">Add recipe</a></button></li>
@@ -51,6 +52,8 @@
     </div>
 
 </main>
+
+{{!-- <footer>Made with ❤️️ by The best coders &copy; Copyright 2022</footer> --}}
 
 <!-- Only include the logout script if the user is logged in -->
   {{#if logged_in}}
