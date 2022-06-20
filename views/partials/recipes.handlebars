@@ -1,0 +1,18 @@
+<ul>
+    {{#each recipes as |recipe|}}
+    <a href="/post/{{recipe.id}}">
+    <li>
+        <h2>
+            {{recipe.name}}
+        </h2>
+        <p>
+            {{recipe.meal}}
+
+        </p>
+        <p>
+            {{recipes.user.name}}
+        </p>
+    </li>
+    </a>
+    {{/each}}
+</ul>
