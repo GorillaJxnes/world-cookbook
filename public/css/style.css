@@ -257,6 +257,8 @@ a:active{
 }
 
 
+
+
 .swing {
     padding: 10px 0 10px 15px;
     color: black;
@@ -451,4 +453,34 @@ a:active{
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+} */
+
+
+
+/* Kyles image CSS tests. */
+
+
+/* .mainImg {
+    background: url(../foodimages/mainneutral.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 50%;    
+}
+.breakfastImg {
+    background: url(../foodimages/breakfastOne.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 50%;    
+}
+.lunchImg {
+    background: url(../foodimages/lunchOne.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 50%;    
+}
+.dinnerImg {
+    background: url(../foodimages/dinnerOne.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 50%;    
 } */
