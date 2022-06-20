@@ -1,5 +1,6 @@
 <ul>
     {{#each recipes as |recipe|}}
+    <a href="/post/{{recipe.id}}">
     <li>
         <h2>
             {{recipe.name}}
@@ -12,5 +13,6 @@
             {{recipes.user.name}}
         </p>
     </li>
+    </a>
     {{/each}}
 </ul>
