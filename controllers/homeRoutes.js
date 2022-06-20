@@ -31,20 +31,11 @@ router.get("/", async (req, res) => {
 
   router.get('/post/:id', async (req, res) => {
     try {
-      const recipeData = await Recipe.id(req.params.id, {
-        include: [
-          {
-            model: User,
-            attributes: ['name'],
-          },
-          {
-            model: Comment,
-            attributes: ['user_id', 'content'],
-          },
-        ],
+      const recipeData = await Recipe.findByPk(req.params.id, {
+        
       });
       const recipe = recipeData.get({ plain: true });
-      res.render('singlePost', {
+      res.render('singlerecipe', {
         recipe,
         logged_in: req.session.logged_in
       });
