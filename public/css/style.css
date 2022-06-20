@@ -28,7 +28,6 @@ body {
     position: absolute;
     width: 1600px;
     height: 950px;
-    
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 10px 100px 20px rgba(132, 132, 132, 0.2);
@@ -183,20 +182,7 @@ a:active{
   
 
 /* LogOut btn  */
-#logout{
-	background-color:#ABCBE0;
-	border:1px solid #ABCBE0;
-	display:inline-block;
-	cursor:pointer;
-	font-family: 'Katibeh', cursive;
-	padding:6px 24px;
-	text-decoration:none;
-    margin: 40%;
-    margin-left: -150%;
-    font-size: 40px;
-    margin-top: 20%;
 
-}
 
 #logout:hover{
     text-decoration: underline;
@@ -220,4 +206,36 @@ a:active{
     margin-left: -175%;
     font-size: 40px;
     margin-top: 20%;
+}
+
+#signup,
+#breakFast,
+#lunch,
+#dinner,
+#recipe,
+#login,
+#logout {
+    background-color:#ABCBE0;
+	border:1px solid #ABCBE0;
+	display:inline-block;
+	cursor:pointer;
+	font-family: 'Katibeh', cursive;
+	text-decoration:none;
+    /* margin: 40%; */
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#recipe:hover{
+    text-decoration: underline;
+    color: #FFFFFF80;
+}
+
+#recipe:active{
+    position:relative;
+	top:1px;
+}
+
+#navigation-account {
+    list-style: none;
 }
