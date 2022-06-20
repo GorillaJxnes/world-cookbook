@@ -1,6 +1,6 @@
 <ul>
     {{#each recipes as |recipe|}}
-    <a href="/post/{{recipe.id}}">
+    <a class="getRecipe" href="/post/{{recipe.id}}">
     <li>
         <h2>
             {{recipe.name}}
@@ -16,3 +16,5 @@
     </a>
     {{/each}}
 </ul>
+
+<script src="/js/getSingleRecipe.js"></script>
