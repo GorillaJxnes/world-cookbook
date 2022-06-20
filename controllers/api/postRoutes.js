@@ -21,6 +21,84 @@ router.post("/newpost", async (req, res) => {
   }
 });
 
+router.get("/breakfast", async (req, res) => {
+    try {
+      const breakfastData = await Recipe.findAll({
+        where: {
+          meal: "breakfast"
+        },
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+      console.log(breakfastData)
+  
+      const breakfastRecipes = breakfastData.map((breakfastRecipes) => breakfastRecipes.get({ plain: true }));
+      console.log(breakfastRecipes);
+  
+      res.render("breakfastrecipes", {
+        breakfastRecipes,
+        logged_in: req.session.logged_in
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+  router.get("/lunch", async (req, res) => {
+    try {
+      const lunchData = await Recipe.findAll({
+        where: {
+          meal: "lunch"
+        },
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+  
+      const lunchRecipes = lunchData.map((lunchRecipes) => lunchRecipes.get({ plain: true }));
+      console.log(lunchRecipes);
+  
+      res.render("lunchrecipes", {
+        lunchRecipes,
+        logged_in: req.session.logged_in
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+  router.get("/dinner", async (req, res) => {
+    try {
+      const dinnerData = await Recipe.findAll({
+        where: {
+          meal: "dinner"
+        },
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+  
+      const dinnerRecipes = dinnerData.map((dinnerRecipes) => dinnerRecipes.get({ plain: true }));
+      console.log(dinnerRecipes);
+  
+      res.render("dinnerrecipes", {
+        dinnerRecipes,
+        logged_in: req.session.logged_in
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 
 
