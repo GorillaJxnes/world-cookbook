@@ -25,6 +25,9 @@ router.get("/", async (req, res) => {
     }
   });
 
+  
+
+
 
   router.get('/post/:id', async (req, res) => {
     try {
@@ -51,17 +54,10 @@ router.get("/", async (req, res) => {
   });
 
 
+ 
   
   
   
-  
-  
-  
-  
-  
-  
-  
-
 
 router.get("/signup", (req, res) => {
   res.render("signup");
