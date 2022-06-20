@@ -17,11 +17,26 @@ html {
 
 body {
     width: 100%;
-
+    margin: 0;
+    padding: 0;
     /* overflow: hidden; */
 }
 header {
-    position: static;
+    align-items: center;
+    background-color: #d0bcac;
+    height: 4.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: row;
+}
+
+button {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-bg {
@@ -111,11 +126,9 @@ a:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100%;
-    height: 10%;
-    width: 50%;
-    margin: -250px;
-    margin-left: 25%;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
 }
 
 .form {
@@ -149,7 +162,6 @@ a:active{
     background-image: linear-gradient(45deg,#328f8a,#08ac4b);
     width: 100%;
     border: 0;
-    padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
@@ -211,12 +223,11 @@ a:active{
 #login,
 #logout {
     opacity: 0.5;
-
 	display:inline-block;
 	cursor:pointer;
 	font-family: 'Katibeh', cursive;
 	text-decoration:none;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #recipe:hover{
@@ -234,11 +245,11 @@ a:active{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position:absolute;
+    position: absolute;
     list-style: none;
 }
 #navigation-account > li{
-
+    
     display: inline-block;
     
 }
@@ -405,10 +416,10 @@ a:active{
     40px 0px 190px rgba(0, 0, 0, 0.23);
 }
 
-#nextStepBtn:hover {
+/* #nextStepBtn:hover {
 	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
 	background-color: #ABCBE0;
-}
+} */
 
 #nextStepBtn:active {
 	position:relative;
@@ -474,6 +485,11 @@ a:active{
 
 
 /* Kyles image CSS tests. */
+#cat,
+#dog {
+    color: white;
+    text-shadow: #392113 1px 1px 1px 1px;
+}
 
 
 #mainImg {
@@ -503,7 +519,7 @@ a:active{
 #lunchImg {
     background-image: url(../foodimages/lunchOne.jpg);
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -515,7 +531,7 @@ a:active{
 #dinnerImg {
     background-image: url(../foodimages/dinnerOne.jpg);
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
