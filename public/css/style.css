@@ -69,7 +69,7 @@ button {
 }
 
 .card-title,
-h3,
+
 .h1{
     font-family: 'Jacques Francois Shadow';
     display: flex;
@@ -77,6 +77,14 @@ h3,
     align-items: center;
     padding: 30px;
     
+}
+
+h3{
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+
+
 }
 
 .card-left{
