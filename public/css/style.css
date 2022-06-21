@@ -4,6 +4,7 @@
 
 /* Universal Selector */
 * {
+    color: rgb(216, 216, 216);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -258,18 +259,19 @@ a:active{
 /* Add Recipe style */
 
 #postDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     position: relative;
     font-family: 'Katibeh', cursive;
     z-index: 1;
-    background: linear-gradient(45deg,#328f8a,#08ac4b);
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
+    background: linear-gradient(45deg,#392113,#d0bcac);
+    max-width: 30%;
+    opacity: .8.8;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 30px;
-    margin: -600px;
-    margin-left: 39%;
     list-style: none;
 }
 
@@ -282,22 +284,27 @@ a:active{
     box-sizing: border-box;
     font-size: 25px;
 }
-
+.brand-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
 
 
 
 .swing {
-    padding: 10px 0 10px 15px;
     color: black;
     background: #efefef;
     border: 0;
     outline: 0;
-    text-indent: 60px;
+    text-indent: 33%;
     font-family: 'Katibeh', cursive;
     border-radius: 30px;
     width: 100%;
     font-size: 20px;
-    padding: 10px;
+    padding: 2.5px, 2.5px, 2.5px, 2.5px;
     box-shadow:
   1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
   2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
@@ -539,4 +546,42 @@ a:active{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center; 
-} 
+}
+#womanImg {
+    background-image: url(../foodimages/womanNeutral.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#postImg {
+    background-image: url(../foodimages/postImg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#woodNav {
+    background-image: url(../foodimages/woodNav.jpg);
+    width: 100%;
+    height: 8.5vh;
+    min-height: 8.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+
+}      
