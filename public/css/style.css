@@ -583,5 +583,16 @@ a:active{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center; 
-
-}      
+}
+#dessertImg {
+    background-image: url(../foodimages/dessert.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}       
