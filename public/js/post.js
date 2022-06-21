@@ -36,22 +36,23 @@ ingredientList.appendChild(newLi);
 newLi.appendChild(newInput);
 newLi.classList.add('listItem')
 newInput.setAttribute('type', 'text');
+newInput.classList.add('ingredient')
 }
 
 const nextStep = (name, meal, ingredients) =>{
     let newForm = document.createElement('form');
     let newInput = document.createElement('input');
-    let newH3 = document.createElement('h3')
-    let newUl = document.createElement('ul')
+    let newH3 = document.createElement('h3');
+    let newUl = document.createElement('ul');
     let newLi = document.createElement('li');
-    let newAddBtn = document.createElement('button')
+    let newAddBtn = document.createElement('button');
     let submitBtn = document.createElement('button');
 
     document.getElementById('postDiv').appendChild(newForm);
     newForm.appendChild(newH3);
     newH3.textContent = 'Please Enter Step by Step Instructions';
     newForm.appendChild(newAddBtn);
-    newAddBtn.setAttribute('id', 'addStepBtn')
+    newAddBtn.setAttribute('id', 'addStepBtn');
     newAddBtn.textContent = 'Add Step';
     newForm.appendChild(newUl);
     newUl.setAttribute('id', 'stepList');
@@ -61,7 +62,7 @@ const nextStep = (name, meal, ingredients) =>{
     newForm.appendChild(submitBtn);
     submitBtn.textContent = 'Submit Recipe';
     submitBtn.setAttribute('type', 'submit')
-
+    newInput.classList.add('ingredient');
     const addStepBtn = document.getElementById('addStepBtn');
     addStepBtn.addEventListener('click', addStep);
     
@@ -118,6 +119,7 @@ const addStep = (e) => {
     newLi.appendChild(newInput);
     newLi.classList.add('listItem');
     newInput.setAttribute('type', 'text');
+    newInput.classList.add('ingredient')
 }
 
 addBtn.addEventListener('click', addIngredient);
