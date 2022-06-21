@@ -111,7 +111,7 @@ a:visited{
 
 a:hover{
     text-decoration: underline;
-    color: #FFFFFF80;
+    /* color: #FFFFFF80; */
 }
 
 a:active{
@@ -187,7 +187,6 @@ a:active{
     max-width: 300px;
     margin: 0 auto;
 }
-  
 
 /* LogOut btn  */
 
@@ -223,7 +222,7 @@ a:active{
 #recipe,
 #login,
 #logout {
-    opacity: 0.5;
+    opacity: 1.0;
 	display:inline-block;
 	cursor:pointer;
 	font-family: 'Katibeh', cursive;
@@ -233,7 +232,7 @@ a:active{
 
 #recipe:hover{
     text-decoration: underline;
-    color: #FFFFFF80;
+    /* color: #FFFFFF80; */
 }
 
 #recipe:active{
